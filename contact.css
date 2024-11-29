@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  :root {
+    --bg-color: #080808;
+    --second-bg-color: #101010;
+    --text-color: white;
+    --main-color: #ff0000;
+  }
+  
+  html {
+    overflow-x: hidden;
+    font-size: 60%;
+  }
+  
+  body {
+    background: var(--bg-color);
+  }
+  
+  .head {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1.8rem 10%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    text-wrap: nowrap;
+  }
+  
+  .head > .titlename {
+    color: white;
+    font-weight: 15px;
+    font-size: 35px;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .head > .titlename:hover {
+    transform: scale(1.05);
+  }
+  
+  span {
+    background: linear-gradient(270deg,#ff72ad 12%,#d41212  100%);
+    background-clip: text;
+    color: transparent;
+    margin-left: 2px;
+    font-size: 35px;
+  }
+  
+  .navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 10rem 10%;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+  }
+  
+  .headline2 {
+    min-width: 280px;
+  }
+  
+  .headline2 > span {
+    font-size: 30px;
+    position: relative;
+  }
+  
+  .headline2 > span::before {
+    content: "High Schooler";
+    animation: words 20s infinite;
+  }
+  
+  .headline2 > span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: var(--bg-color);
+    border-left: 2px solid white;
+    right: -8px;
+    animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+  }
+  
+  @keyframes cursor {
+    to {
+      border-left: 2px solid var(--bg-color);
+    }
+  }
+  
+  @keyframes words {
+    0%,
+    20% {
+      content: "High Schooler";
+    }
+    21%,
+    40% {
+      content: "Dev Candidate";
+    }
+    41%,
+    60% {
+      content: "Introvert";
+    }
+    61%,
+    80% {
+      content: "Stoicisme";
+    }
+    81%,
+    100% {
+      content: "Reader";
+    }
+  }
+  
+  @keyframes typing {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+      width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+      width: calc(100% + 8px);
+    }
+  }
+  body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #393939;
+    color: white;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background-color:#f54343;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff0c0c;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.buttons button {
+    width: 48%;
+}
+.container {
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.container {
+  transform: scale(1.05);
+  border: 5px solid #ff0c0c;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+

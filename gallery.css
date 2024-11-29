@@ -1,0 +1,110 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    font-family: Poppins;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  :root {
+    --bg-color: #080808;
+    --second-bg-color: #101010;
+    --text-color: white;
+    --main-color:#ff0000 ;
+  }
+  
+  html {
+    overflow-x: hidden;
+    font-size: 60%;
+  }
+  
+  body {
+    background: var(--bg-color);
+  }
+  
+  .head {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1.8rem 10%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    text-wrap: nowrap;
+  }
+  
+  .head > .titlename {
+    color: white;
+    font-weight: 15px;
+    font-size: 35px;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .head > .titlename:hover {
+    transform: scale(1.05);
+  }
+  
+  span {
+    background: linear-gradient(270deg,#ff72ad 12%,#d41212  100%);
+    background-clip: text;
+    color: transparent;
+    margin-left: 2px;
+    font-size: 35px;
+  }
+  
+  .navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+
+  body {
+    background-color: #111;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.layout-gambar {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  columns: 4 200px;
+  column-gap: 1em;
+}
+
+.layout-gambar img {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  box-shadow: transparent;
+}
+
+.layout-gambar img:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
